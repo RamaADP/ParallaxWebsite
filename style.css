@@ -1,0 +1,176 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body
+{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1;
+}
+
+#header h1 
+{
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #d33609;
+}
+
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#header ul li
+{
+    list-style: none;
+    margin-left: 40px;
+}
+
+#header ul li a
+{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #d33609;
+    font-size: 25px;
+    border-radius: 20px;
+    font-family: Helvetica;
+ 
+  
+}
+
+#header ul li a:hover
+{
+    background:#d33609;
+    color:white;
+    
+}
+
+#header ul li a.active
+{
+    background:#d33609;
+    color:white;
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #2b0a21, transparent); 
+    z-index: 9;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #text {
+    position: absolute;
+    color: #d33609;
+    font-size: 8vw;
+    text-align: center;
+    line-height: 0.75em;
+    transform: translateY(-40%);
+    z-index: 0;
+}
+
+section #text span {
+    color: #7b1332;
+    font-size: 4vw;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px;
+    background: #7b1332;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 60px;
+    transform: translateY(90px);
+    z-index: 0;
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b0a21;
+
+}
+
+.sec h2 
+{
+    font-size: 4em;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.sec p 
+{
+    font-size: 2em;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.sec p a
+{
+    text-decoration: none;
+    color:#d33609;
+}
+
+.sec h3
+{
+    font-size: 2em;
+    color:white;
+    text-align: right;
+    margin-right: 50px;
+}
